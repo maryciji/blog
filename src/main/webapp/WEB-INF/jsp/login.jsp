@@ -84,7 +84,7 @@
 		  <div class="form-group">
 		    <div class="col-sm-offset-2 col-sm-10">
 		      <button id="submit" type="submit" class="btn btn-default">登录</button>
-		      <%-- <a style="margin-left:30px;"  href="<%=basePath%>user/register">注册</a> --%>
+		      <a style="margin-left:30px;"  href="<%=basePath%>user/reg">注册</a>
 		    </div>
 		  </div>
 		</form>

@@ -53,7 +53,6 @@ public class UserController {
            } else {
             System.out.println("没有Cookie");
            }
-        
         List<UserBase> list = this.userBaseService.queryAllUser();
         // 将其保存在ModelAndView中,用于在jsp列表页面展示
         System.out.println(list);
@@ -72,6 +71,19 @@ public class UserController {
     		HttpServletResponse response) {
         System.out.println("login");
         return new ModelAndView("/login");
+    }
+    /**
+     * 
+     * @param request
+     * @param response
+     * @return 注册页面
+     */
+    @RequestMapping(value="/reg",method = RequestMethod.GET)
+    @ResponseBody
+    public ModelAndView Reg(HttpServletRequest request,
+    		HttpServletResponse response) {
+        System.out.println("reg");
+        return new ModelAndView("/reg");
     }
     @RequestMapping(value="/loginUser",method = RequestMethod.POST)
     @ResponseBody
